@@ -1,3 +1,6 @@
-node_modules/
+node_modules
 
-dist
+webpack.config.js
+webpack.server.config.js
+
+dist/

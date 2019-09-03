@@ -4,7 +4,8 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: {
-    server: './src/buildScripts/srcServer.js'
+    server: './src/buildScripts/srcServer.js',
+    startMessage: './src/buildScripts/startMessage.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),
