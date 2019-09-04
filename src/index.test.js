@@ -1,7 +1,9 @@
 import jsdom from 'jsdom';
 import fs from 'fs';
+import path from 'path';
 
-const index = fs.readFileSync('/Users/johnnoriega/WebstormProjects/starterKit/starterKit/src/index.html', 'utf-8');
+
+const index = fs.readFileSync(path.resolve(__dirname, './index.html'), 'utf-8');
 
 const {JSDOM} = jsdom;
 const dom  = new JSDOM(index, { runScripts: 'dangerously'});
